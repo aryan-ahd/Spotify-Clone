@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "National Park", sans-serif;
+}
+
+.left {
+    width: 35vw;
+    height: 87vh;
+    position: relative;
+}
+
+.right {
+    width: 65vw;
+    height: 87vh;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+}
+
+.nav img {
+    filter: invert(1);
+}
+
+.logo img {
+    height: 35px;
+}
+
+.search-button img {
+    height: 25px;
+}
+
+.search-button input {
+    border: none;
+    outline: none;
+}
+
+.text button:nth-of-type(1) {
+    background-color: black;
+    color: #b3b3b3;
+    font-family: "National Park", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.text button:nth-of-type(1):hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.text button:nth-of-type(2) {
+    background-color: white;
+    color: black;
+    font-family: "National Park", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 12px 27px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.text button:nth-of-type(2):hover {
+    transform: scale(1.05);
+}
+
+.text span:hover {
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.left img {
+    filter: invert(1);
+}
+
+.left header img {
+    height: 16px;
+}
+
+.right {
+    /* background-color: #222222; */
+    background: linear-gradient(to bottom, #222222, #121212);
+    position: relative;
+}
+
+.Songs {
+    padding: 20px;
+}
+
+.card {
+    width: 145px;
+    padding: 8px;
+    margin: 12px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.card p {
+    color: #a8a8a8;
+}
+
+.CardContainer {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.card svg {
+    height: 24px;
+    padding: 12px;
+    position: absolute;
+    top: 120px;
+    right: 12px;
+    background-color: #1ed760;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.card:hover svg {
+    transform: translateY(-18px);
+    opacity: 1;
+}
+
+.card:hover {
+    background-color: #1f1f1f;
+}
+
+.left footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 24px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #ffffff69;
+    position: absolute;
+    bottom: 0px;
+}
+
+.playbar {
+    height: 38px;
+    width: 95%;
+    /* background-color: #222222; */
+    border-radius: 24px;
+    position: absolute;
+    bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.icons img {
+    height: 20px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.seek {
+    width: 95%;
+    background-color: white;
+    height: 3px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: #1ed760;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: all 1s linear;
+}
+
+.main {
+    margin: 0px 40px;
+    height: 75%;
+    width: 85%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /* background-color: rgba(0, 255, 17, 0.177); */
+}
+
+.main ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    word-break: break-word;
+}
+
+.main ul li {
+    list-style: none;
+    padding: 12px 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+.cross{
+    display: none;
+}
+@media (max-width: 1260px){
+    .left{
+        position: absolute;
+        z-index: 1;
+        width: 35vw;
+        left: -100%;
+        transition: all 1s ease;
+    }
+    .right{
+        width: 100%; 
+    }
+    .hamburger{
+        display: block;
+        height: 20px;
+        filter: invert();
+        cursor: pointer;
+    }
+    .cross{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media (max-width: 900px) {
+    .left{
+        width: 50vw;
+        left: -100%;
+    }
+    .right{
+        width: 100vw;
+    }
+    .nav {
+        flex-direction: column;
+    }
+
+    .search-button {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .text button {
+        width: 100%;
+    }
+    .playbar{
+        width: 90%;
+        left: 5%;
+    }
+    .CardContainer{
+        justify-content: center;
+    }
+}
+@media (max-width: 600px){
+    .left{
+        width: 95vw;
+        left: -100%;
+    }
+    .CardContainer{
+        justify-content: center;
+    }
+}

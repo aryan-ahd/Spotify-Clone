@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div>
+        <nav class="nav flex item-centre p-1 box-size gap-2">
+            <div class="logo flex gap-1">
+                <img src="img/logo.svg" alt="">
+                <img src="img/home.svg" alt="">
+            </div>
+            <div class="search-button flex justify-centre item-centre grey-1 border-rad-1 p-2 gap-3">
+                <div class="flex justify-centre item-centre gap-2">
+                    <img src="img/search.svg" alt="">
+                    <input type="text" placeholder="What do you want to play?"
+                        style="background-color: #1f1f1f; color: white;">
+                </div>
+                <img src="img/browze.svg" alt="">
+            </div>
+            <div class="text flex gap-4 grey-3 font-w8 item-centre">
+                <div style="
+                display: flex;
+                gap: 12px;">
+                    <span>Premium</span>
+                    <span>Support</span>
+                    <span>Download</span>
+                </div>
+                <div class="flex item-centre gap-1">
+                    <span style="font-size: 14px;">Install App</span>
+                    <button>Sign up</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container box-size flex">
+            <div class="left grey-2 border-rad-2 margin-1">
+                <header class="p-3 flex item-centre space-around">
+                    <h2>Your Library</h2>
+                    <img class="cross" src="img/cross.svg" alt="">
+                </header>
+                <div class="main">
+                    <ul>
+                    </ul>
+                </div>
+                <footer>
+                        <p>Legal</p>
+                        <p>Safety & Privacy Centre</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookies</p>
+                        <p>About Ads</p>
+                        <p>Accessibility</p>
+                </footer>
+            </div>
+            <div class="right border-rad-2 margin-1">
+                <div class="Songs">
+                    <div class="flex item-centre gap-5">
+                        <img class="hamburger" src="img/hamburger.svg" alt="">
+                        <h2>Trending Playlists</h2>
+                    </div>
+                    <div class="CardContainer">
+                        
+                    </div>
+                    <div class="playbar">
+                        <div class="mainbar"> 
+                            <div class="songinfo"></div>
+                            <div class="icons">
+                                <img id="previous" src="img/Previous.svg" alt="">
+                                <img id="play" src="img/play.svg" alt="">
+                                <img id="next" src="img/Next.svg" alt="">
+                            </div>
+                            <div class="duration"></div>
+                        </div>
+                        <div class="seek">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

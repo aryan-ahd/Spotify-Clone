@@ -76,7 +76,7 @@ const playsong=(track,pause=false)=>{
 }
 
 async function displayAlbums(){
-    let a = await fetch(`http://127.0.0.1:3000/Music/`)
+    let a = await fetch(`/Music/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
@@ -86,10 +86,10 @@ async function displayAlbums(){
         for (let index = 0; index < array.length; index++) {
             const e = array[index];
             
-        if(e.href.includes("/Music")){
+        if(e.href.includes("/Music") &&!e.href.includes(".htaccess")) {
             let folder=e.href.split("/").slice(-2)[0];
             //Get the matadata from the folder
-            let a = await fetch(`http://127.0.0.1:3000/Music/${folder}/info.json`)
+            let a = await fetch(`/Music/${folder}/info.json`)
             let response = await a.json()
             cardContainer.innerHTML=cardContainer.innerHTML+`<div data-folder="${folder}" class="card">
                             <img src="Music/${folder}/cover.jpg" alt="">

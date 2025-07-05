@@ -306,5 +306,9 @@ body {
     }
     .CardContainer{
         justify-content: center;
+        max-height: 74vh;
+    }
+    .card{
+        width: 200px;
     }
 }

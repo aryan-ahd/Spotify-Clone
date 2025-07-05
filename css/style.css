@@ -304,6 +304,9 @@ body {
         width: 95vw;
         left: -100%;
     }
+    .right{
+        height: 84vh;
+    }
     .CardContainer{
         justify-content: center;
         max-height: 74vh;

@@ -190,7 +190,7 @@ body {
     height: 3px;
     /* border: 2px solid rgb(255, 255, 255); */
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .circle {
@@ -237,42 +237,51 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
-.cross{
+
+.cross {
     display: none;
 }
-@media (max-width: 1260px){
-    .left{
+
+@media (max-width: 1260px) {
+    .left {
         position: absolute;
         z-index: 1;
         width: 35vw;
         left: -100%;
         transition: all 1s ease;
     }
-    .right{
-        width: 100%; 
+
+    .right {
+        width: 100%;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         height: 20px;
         filter: invert();
         cursor: pointer;
     }
-    .cross{
+
+    .cross {
         display: block;
         cursor: pointer;
     }
 }
+
 @media (max-width: 900px) {
-    .left{
+    .left {
         width: 50vw;
         left: -100%;
     }
-    .right{
+
+    .right {
         width: 100vw;
     }
+
     .nav {
         flex-direction: column;
     }
@@ -291,27 +300,40 @@ body {
     .text button {
         width: 100%;
     }
-    .playbar{
+
+    .playbar {
         width: 90%;
         left: 5%;
     }
-    .CardContainer{
+
+    .CardContainer {
         justify-content: center;
     }
 }
-@media (max-width: 600px){
-    .left{
+
+@media (max-width: 600px) {
+    .left {
         width: 95vw;
         left: -100%;
     }
-    .right{
+
+    .right {
         height: 84vh;
     }
-    .CardContainer{
+
+    .CardContainer {
         justify-content: center;
         max-height: 74vh;
     }
-    .card{
+
+    .card {
         width: 200px;
+    }
+
+    .card svg {
+        height: 24px;
+        padding: 18px;
+        position: absolute;
+        top: 158px;
     }
 }
